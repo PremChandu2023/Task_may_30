@@ -5,6 +5,8 @@ public class Library {
 
         private int bookcount;
 
+        private int s=20;
+
 
 
     public Library(int capacity) {
