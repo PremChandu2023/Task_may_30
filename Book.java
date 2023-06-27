@@ -4,7 +4,7 @@ public class Book {
     private String title;
     private String author;
 
-    private double rating=0;
+    private double rating=1;
 
     private double rentperday=0.0;
 
