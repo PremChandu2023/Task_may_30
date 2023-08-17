@@ -7,6 +7,7 @@ public class Book {
     private double rating=1;
 
     private double rentperday=0.0;
+    gfhfuytdgchtuj
 
     private String booktype;
 
