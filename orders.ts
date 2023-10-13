@@ -1,18 +1,18 @@
 interface OrderItem {
     sno : number;
-    item : Menuitems;
+    item : Menuitem;
     Quantity : number;
 }
 
 interface OrderForm {
-    addOrder(orderNo : number, orderItem : Menuitems, orderQuantity : number ) : void
+    addOrder(orderNo : number, orderItem : Menuitem, orderQuantity : number ) : void
     removeOrder(index : number);
     getOrdersList() : OrderItem[];
     getOrderPrice() : void ;
 }
-class OrderForm implements OrderForm {
+class OrderForm  {
     private orderItems : OrderItem[]= [];
-    addOrder(orderNo: number, orderItem: Menuitems, orderQuantity: number): void {
+    addOrder(orderNo: number, orderItem: Menuitem, orderQuantity: number): void {
         const newOrder = {
             sno : orderNo,
             item:orderItem,
@@ -44,13 +44,11 @@ class OrderForm implements OrderForm {
         console.log(amount);
         
     }
-    
-
 
 }
 
 const order1 = new OrderForm();
-const menuitem1=new Menuitems(1,"Burger", "Delicious beef burger", 10.9)
+const menuitem1=new Menuitem(1,"Burger", "Delicious beef burger", 10.9)
 
 order1.addOrder(1,menuitem1,3);
 
